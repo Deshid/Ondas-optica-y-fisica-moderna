@@ -1,0 +1,60 @@
+\documentclass[a4paper,12pt,numbers=noenddot]{scrreprt}
+\setlength{\headheight}{61.24997pt} % Definition der KOMA-Textklasse
+\usepackage{amsmath}
+
+\usepackage{tikz} % Add this line to include the tikz package
+\usepackage{fancyhdr} 
+\usepackage{graphicx}
+\usepackage{ragged2e} % Add this line to include the ragged2e package
+\usepackage{multicol} % Add this line to include the multicol package
+\usepackage{amsfonts}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Set up fancy header/footer
+\pagestyle{fancy}
+\fancyhead[LO,L]{Deshi}
+\fancyhead[CO,C]{Ondas, Óptica y Física Moderna - Fórmulas}
+\fancyhead[RO,R]{\today}
+\fancyfoot[LO,L]{}
+\fancyfoot[CO,C]{\thepage}
+\fancyfoot[RO,R]{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+% Add the logo in the header
+\lhead{\includegraphics[width=2cm]{LogoCat-transparent.png}} % Replace "logo.png" with the filename of your logo image
+
+\title{Formulas}
+% Contenido del documento
+\section*{Movimiento armónico simple}
+\begin{multicols}{2}
+\begin{itemize}
+    \item[\textbf{1.}] \textbf{\large Ecuaciones de movimiento}
+    \item \textbf{Posición:}\\ $x(t) = X_m \cdot \cos(\omega t + \phi)$
+    \item \textbf{Velocidad:}\\ $v(t) = -X_m \cdot \omega \cdot \sin(\omega t + \phi)$
+    \item \textbf{Aceleración:}\\ $a(t) = -X_m \cdot \omega^2 \cdot \cos(\omega t + \phi)$
+    \item[\textbf{2.}] \textbf{\large Frecuencia y periodo}
+    \item \textbf{Frecuencia angular:}\\ $\omega = 2\pi f = \frac{2\pi}{T}$
+    \item \textbf{Frecuencia:}\\ $f = \frac{1}{T}$
+    \item \textbf{Periodo:}\\ $T = \frac{2\pi}{\omega}$
+    \item[\textbf{3.}] \textbf{\large Valores máximos}
+    \item \textbf{Velocidad máxima:}\\ $v_m = X_m \cdot \omega$
+    \item \textbf{Aceleración máxima:}\\ $a_m = X_m \cdot \omega^2$
+    \item[\textbf{4.}] \textbf{\large Energía}
+    \item \textbf{Energía potencial:}\\ $E_{pot} = \frac{1}{2} k x^2$
+    \item \textbf{Energía cinética:}\\ $E_{kin} = \frac{1}{2} m v^2$
+    \item \textbf{Energía total:}\\ $E_{tot} = E_{pot} + E_{kin}$
+    \item \textbf{Energía total:}\\ $E_{tot} = \frac{1}{2} k X_m^2$
+    \item[\textbf{5.}] \textbf{\large Constante del resorte y periodo}
+    \item \textbf{Constante del resorte:}\\ $k = \frac{m \cdot \omega^2}{X_m}$
+    \item \textbf{Constante del resorte:}\\ $k = \frac{4\pi^2 m}{T^2}$
+    \item \textbf{Constante del resorte:}\\ $k = 2\pi f \cdot m$
+    \item[\textbf{6.}] \textbf{\large Periodo}
+    \item \textbf{Periodo:}\\ $T = 2\pi \sqrt{\frac{m}{k}}$
+\end{itemize}
+\end {multicols}
+
+\end{document}
